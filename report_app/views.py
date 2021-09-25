@@ -7,6 +7,11 @@ def index(request):
 
 def graphpage(request):
     word = request.GET.get('chk','')
-    if word == "CCTV":
-        return render(request,'graph/living.html',{'word':word})
+    if word == "living":
+    if word == "kara":
+    if word == "crime":
+    if word == "single":
+
+
+    return render(request,'graph/living.html',{'word':word})
 
