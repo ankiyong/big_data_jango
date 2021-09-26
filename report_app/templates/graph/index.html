@@ -10,9 +10,15 @@
             background-size : 1300px;
         }
         form {
-          font
-          position : relative;
-          left:40%
+                    position : absolute;
+        left:50%;
+        top:40%;
+        transform:translate(-50%,-50%);
+
+        }
+
+        h1 {
+        font-size : 110px;
 
         }
     </style>
@@ -21,16 +27,19 @@
 
     <form action="/graphpage" method="get">
         <h1 class="title" style="color:white" >Seoul Safty Info</h1>
-   <input type="checkbox" id = 'crime' name="chk" value="crime">
+    <input type="checkbox" id = 'crime' name="chk" value="crime">
         <label for="crime" style="color:white">5대범죄발생</label>
-
-   <input type="checkbox" id = 'single' name="chk" value="single">
-        <label for="single" style="color:white">여성1인가구</label>
-    <input type="checkbox" id="living" name="chk" value="living">
-        <label for="living" style="color:white">생활인구</label>
-    <input type="checkbox" id="kara" name="chk" value="kara">
-        <label for="kara" style="color:white">유흥업소</label>
-    <button>Search</button>
+    <input type="checkbox" id = 'arrest' name="chk" value="arrest" >
+        <label for="arrest" style="color:white">5대범죄검거</label>
+    <input type="checkbox" id = 'living' name="chk" value="living">
+        <label for="living" style="color:white">주거환경요인</label>
+    <input type="checkbox" id="population" name="chk" value="population">
+        <label for="population" style="color:white">인구학적요인</label>
+    <input type="checkbox" id="society" name="chk" value="society">
+        <label for="society" style="color:white">사회경제적요인</label>
+    <input type="checkbox" id="safety" name="chk" value="safety">
+        <label for="safety" style="color:white">치안환경요인</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Search</button>
     </form>
 
 
